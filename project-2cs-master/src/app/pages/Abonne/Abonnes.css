@@ -1,0 +1,292 @@
+.Abonne {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 10vh;
+}
+
+.search {
+  position: relative;
+  width: 50%;
+  height: 4vh;
+}
+
+.search input {
+  width: 90%;
+  height: 100%;
+  padding-left: 40px;
+}
+
+#searchIcon {
+  cursor: pointer;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#searchIcon:hover {
+  top: 3px;
+  font-size: 25px;
+}
+
+.operation {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.operation div {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#orderIcon, #filterIcon, #moreIcon {
+  cursor: pointer;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+}
+
+#orderIcon:hover, #filterIcon:hover, #moreIcon:hover {
+  font-size: 30px;
+}
+
+.main {
+  width: 80%;
+  height: auto;
+  min-height: 80vh;
+}
+
+table {
+  width: 85%;
+  margin: 50px;
+  height: auto;
+  min-height: 80vh;
+  border-collapse: collapse;
+}
+
+th {
+  color: gray;
+  font-weight: bolder;
+}
+
+tr {
+  border: 1px solid black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 10px !important;
+}
+
+td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  height: 5vh;
+}
+
+.userInfo {
+  padding-left: 10px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.userInfo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.userInfo img {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  background-color: green;
+}
+
+#etat {
+  background-color: rgba(42, 255, 42, 0.678);
+  border-radius: 10px;
+  margin-right: 10px;
+  color: black;
+}
+
+.abonneEtat {
+  position: relative;
+}
+
+.abonneEtat ul {
+  position: absolute;
+  border: 0.5px solid #6b6b6b;
+  height: 15vh;
+  width: 5vh;
+  background-color: white;
+  right: 10px;
+  padding-right: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.abonneEtatList li {
+  cursor: pointer;
+  list-style: none;
+}
+
+.abonneEtatList li:hover {
+  color: blue;
+}
+
+.paginationBtns {
+  color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 5vh;
+  width: 50%;
+  list-style: none;
+}
+
+.paginationBtns a {
+  color: black;
+  cursor: pointer;
+  font-style: oblique;
+  font-weight: bolder;
+  border: white 1px solid;
+  border-radius: 80px;
+  padding: 5px;
+}
+
+.paginationBtns a:hover {
+  background-color: black;
+  color: #17179c;
+}
+
+.pagintationActive a {
+  color: #17179c;
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .head {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 10px;
+  }
+  table {
+    font-size: 10px;
+  }
+  .userInfo img {
+    height: 5vh;
+    width: 5vh;
+  }
+  .paginationBtns a {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=Abonnes.css.map */

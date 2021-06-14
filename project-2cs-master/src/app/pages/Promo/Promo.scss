@@ -1,0 +1,86 @@
+@import '../Abonne/Abonnes.scss';
+
+$promoColor: rgba(255, 174, 0, 0.801);
+.Promo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+#promoAddBtn, #promoModalBtn{
+    background-color: $promoColor;
+    border: 1px solid black;
+    border-radius:10px;
+    height: 5vh;
+    width:30vh;
+    font-weight: bold;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.Promo header{
+   @include flex(space-between,row);
+    width:100%;
+    height: 10vh;
+}
+.Promo header div{
+    position:relative;
+}
+#promoAddIcon{
+    position: absolute;
+    top: 5px;
+    left:5px;
+    transition: 0.1s all ease-in-out;
+    cursor: pointer;
+}
+#promoAddIcon:hover{
+    top: 2px;
+    font-size: 30px;
+}
+
+.promoOperation{
+    @include flex(space-evenly,row);
+}
+.modal{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    @include flex(center,row);
+}
+#promoModal{
+    height: 90%;
+    width:90%;
+    border: 1px solid rgb(90, 90, 90);
+    margin:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#promoModal form{
+    border-top: 0.5px rgb(104, 104, 104) solid;
+    @include flex(space-between,column);
+    width: 80%;
+}
+#promoModal div{
+    @include flex(space-between,row);
+    width: 50%;
+}
+#promoModalCode{
+    width: 25% !important;
+}
+#promoModalCode p{
+    color: $promoColor;
+    font-size: 12px;
+}
+#promoModalAddIcon{
+    font-size: 12px;
+}
+
+
+
+@media  screen and (max-width: 600px){
+    header div button{
+        font-size: 10px;
+    }
+}
+

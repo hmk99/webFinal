@@ -1,0 +1,38 @@
+@import '../Abonne/Abonnes.scss';
+
+.Facture{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+#factureEtat, #allocEtat{
+    border-radius: 10px;
+    color: white;
+    height: 30px;
+    width: 100px;
+    @include flex(center, row);
+    
+}
+.headAlloc{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+}
+#factureDownload{
+    transition: 0.1s all ease-in-out;
+    cursor: pointer;
+}
+#factureDownload:hover{
+    font-size: 30px;
+}
+
+@media  screen and (max-width: 600px){
+    #factureEtat, #allocEtat{
+        height: 10px;
+        width: 50px;
+    }
+
+}
+
